@@ -13,9 +13,6 @@
         <module>service</module>
     </modules>
 
-    <dependencies>
-
-    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -23,9 +20,18 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <showWarnings>true</showWarnings>
-                    <showDeprecation>true</showDeprecation>
+                    <source>10</source>
+                    <target>10</target>
+                    <fork>true</fork>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.ow2.asm</groupId>
+                        <artifactId>asm</artifactId>
+                        <!-- Use newer version of ASM -->
+                        <version>6.1.1</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>

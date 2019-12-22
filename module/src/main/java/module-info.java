@@ -4,6 +4,6 @@
  * @since 2018-05-31
  */
 module module {
-    // requires service;
+    requires service;
     requires java.logging;
 }

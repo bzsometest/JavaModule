@@ -1,0 +1,1 @@
+jlink -p target/module-1.0-SNAPSHOT-dist-dir --add-modules module --output D:\java-module --launcher start=module/com.bzchao.module.ModuleTest
